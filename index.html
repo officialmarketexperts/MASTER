@@ -3,38 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Trading Community</title>
 
-<title>Gujarati Trader</title>
-
-<!-- ================= META PIXEL START ================= -->
+<!-- ================= EDITABLE SETTINGS ================= -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1396903871770558');
-fbq('track', 'PageView');
+  const BRAND_NAME = "TRADE WITH KAROL";
+  const LOGO_URL = "https://uploads.onecompiler.io/4479c7wrg/3x2zp2yd7/WhatsApp%20Image%202025-12-25%20at%2011.50.02.jpeg";
+  const TELEGRAM_LINK = "https://t.me/+ZcLOo7eWdjxiNjQ1";
+  const META_PIXEL_ID = "848758444744237";   // change anytime
 </script>
+<!-- ===================================================== -->
+
+<!-- ================= META PIXEL ================= -->
+<script>
+!function(f,b,e,v,n,t,s){
+  if(f.fbq)return;
+  n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', META_PIXEL_ID);
+fbq('track', 'PageView');     // ✅ PageView only
+</script>
+
 <noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=888414463652602&ev=PageView&noscript=1"/>
 </noscript>
-     <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1396903871770558&ev=PageView&noscript=1"
-/></noscript>
 <!-- ================= META PIXEL END ================= -->
 
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-margin:0;
-font-family:Segoe UI,Arial,sans-serif;
-background:linear-gradient(180deg,#050505,#0d0d0d);
-color:#f5f5f5;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#ff0080,#7928ca,#2afadf);
+background-size:300% 300%;
+animation:bg 12s ease infinite;
+color:#fff;
 text-align:center;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
 }
 
 .container{
@@ -43,121 +63,107 @@ margin:auto;
 padding:26px 16px 40px;
 }
 
-/* ZOOM OUT ANIMATION */
-@keyframes zoomOut{
-0%{transform:scale(1)}
-30%{transform:scale(1.06)}
-60%{transform:scale(0.96)}
-100%{transform:scale(1)}
-}
-
 /* LOGO */
-.logo-wrap{
-margin-top:22px;
-display:flex;
-justify-content:center;
-}
-
-.logo-gold{
-width:150px;
-height:150px;
+.logo{
+width:130px;
+height:130px;
+margin:20px auto;
 border-radius:50%;
-padding:3px;
-background:linear-gradient(135deg,#d4af37,#8f6b1f,#d4af37);
-box-shadow:0 0 18px rgba(212,175,55,.6);
-animation:zoomOut 3.6s ease-in-out infinite;
+padding:6px;
+background:linear-gradient(45deg,#ffd700,#00ffd5,#ffd700);
+box-shadow:0 0 35px rgba(0,255,213,.9);
 }
 
-.logo-gold img{
+.logo img{
 width:100%;
 height:100%;
 border-radius:50%;
 background:#000;
 }
 
-/* TITLE */
+/* TEXT */
 h1{
-margin:16px 0 6px;
 font-size:30px;
 font-weight:900;
-letter-spacing:1.5px;
-color:#d4af37;
+margin-top:12px;
 }
 
 .sub{
 font-size:14px;
-color:#bfae72;
+opacity:.9;
+margin-bottom:22px;
 }
 
-/* INFO BOX */
-.info-box{
-margin:20px 0;
-background:#0f0f0f;
-border-radius:16px;
-padding:15px 16px;
-text-align:left;
-border:1px solid #1f1f1f;
-}
-
-.info-box li{
-margin:8px 0;
-font-size:14px;
-color:#e5e5e5;
-}
-
-/* JOIN BUTTON */
-.join-btn{
-margin:22px auto 12px;
-display:block;
-width:100%;
-max-width:360px;
+/* INFO */
+.box{
+background:rgba(0,0,0,.35);
+border-radius:18px;
 padding:16px;
-font-size:18px;
+margin-bottom:20px;
+}
+
+.box p{
+font-size:14px;
+line-height:1.7;
+}
+
+/* FEATURES */
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:14px;
+}
+
+.feature{
+background:rgba(255,255,255,.15);
+padding:12px;
+border-radius:14px;
+font-size:13px;
+}
+
+/* BUTTON */
+.btn{
+margin-top:26px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:16px;
+border-radius:22px;
+font-size:17px;
 font-weight:900;
-letter-spacing:.8px;
-border-radius:16px;
-color:#ffffff;
+color:#000;
 text-decoration:none;
-background:linear-gradient(90deg,#ff2a2a,#2563eb);
-box-shadow:0 0 24px rgba(37,99,235,.6);
-animation:zoomOut 2.8s ease-in-out infinite;
+background:linear-gradient(90deg,#00ffd5,#fff700);
 }
 
-/* LIVE SECTION */
+.btn svg{
+width:22px;
+height:22px;
+}
+
+/* LIVE */
 .live{
-margin-top:8px;
-font-size:18px;
-font-weight:800;
-color:#f5d77a;
-}
-
-.client-box{
-margin:10px auto 0;
-background:#0f0f0f;
-border-radius:16px;
+margin-top:26px;
+background:rgba(0,0,0,.35);
+border-radius:18px;
 padding:14px;
-max-width:360px;
-border:1px solid #1f1f1f;
 }
 
-.profit{
-font-size:24px;
+.amount{
+font-size:22px;
 font-weight:900;
-color:#3ddc84;
-margin:4px 0;
+color:#00ffd5;
+margin-top:6px;
 }
 
-.small{
-font-size:12px;
-color:#9aa0a6;
-}
-
-/* DISCLAIMER */
-.warn{
-margin-top:18px;
+/* FOOTER */
+.footer{
+margin-top:24px;
 font-size:11.5px;
-color:#8b8b8b;
-line-height:1.5;
+opacity:.85;
+line-height:1.6;
 }
 </style>
 </head>
@@ -166,50 +172,71 @@ line-height:1.5;
 
 <div class="container">
 
-  <div class="logo-wrap">
-    <div class="logo-gold">
-      <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader Logo">
+  <!-- LOGO -->
+  <div class="logo">
+    <img id="logo" src="" alt="Logo">
+  </div>
+
+  <h1 id="brand"></h1>
+  <div class="sub">📊 Learn • Discipline • Risk Control</div>
+
+  <div class="box">
+    <p>
+      🚀 Premium trading education community.<br>
+      ❌ No tips • ❌ No guarantees<br>
+      ✅ Only structured market learning.
+    </p>
+
+    <div class="features">
+      <div class="feature">📈 Chart Reading</div>
+      <div class="feature">🧠 Psychology</div>
+      <div class="feature">🛡️ Risk Control</div>
+      <div class="feature">📊 Market Levels</div>
     </div>
   </div>
 
-  <h1>GUJARATI TRADER</h1>
-  <div class="sub">Market Education • Discipline • Risk Awareness</div>
-
-  <div class="info-box">
-    <ul>
-      <li>📊 Chart Reading & Technical Levels</li>
-      <li>📈 Nifty • BankNifty • Stocks</li>
-      <li>🛡️ Risk Management Education</li>
-    </ul>
-  </div>
-
-  <a class="join-btn"
-     href="https://t.me/+8I_jmxQJMHI4MjFl"
-     target="_blank"
-     onclick="fbq('track','JoinTelegramClick');">
-     JOIN OUR TELEGRAM
+  <!-- TELEGRAM BUTTON -->
+  <a class="btn" href="#" target="_blank" id="tgBtn">
+    <!-- TELEGRAM ICON -->
+    <svg viewBox="0 0 240 240">
+      <path fill="#000"
+        d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120
+        120-53.7 120-120S186.3 0 120 0zm58.7 82.6l-20.3 96.2
+        c-1.5 6.8-5.5 8.5-11.1 5.3l-30.8-22.7-14.9 14.4
+        c-1.6 1.6-3 3-6.1 3l2.2-31.3 57-51.5
+        c2.5-2.2-.5-3.4-3.9-1.2l-70.5 44.4-30.4-9.5
+        c-6.6-2.1-6.7-6.6 1.4-9.8l118.8-45.8
+        c5.5-2 10.3 1.3 8.6 9.5z"/>
+    </svg>
+    JOIN TELEGRAM
   </a>
 
-  <div class="live">🔴 Live Community Update</div>
-
-  <div class="client-box">
-    <div class="profit" id="profit">+ ₹34,440</div>
-    <div class="small">Shared learning outcome</div>
+  <!-- LIVE RESULT -->
+  <div class="live">
+    <div>✨ Ajay P.</div>
+    <div class="amount">+ ₹28,600</div>
+    <div style="font-size:12px;opacity:.8">Learning outcome</div>
   </div>
 
-  <div class="warn">
-    ⚠️ Educational purpose only. No tips, no guarantees.<br>
+  <div class="footer">
+    ⚠️ Educational purpose only.<br>
     Market participation involves risk.
   </div>
 
 </div>
 
 <script>
-const profits=[12400,18600,24500,34440,29800];
-setInterval(()=>{
-document.getElementById("profit").innerText =
-"+ ₹"+profits[Math.floor(Math.random()*profits.length)].toLocaleString("en-IN");
-},6000);
+/* APPLY EDITABLE DATA */
+document.getElementById("brand").innerText = BRAND_NAME;
+document.getElementById("logo").src = LOGO_URL;
+document.getElementById("tgBtn").href = TELEGRAM_LINK;
+
+/* ONLY ALLOWED EVENTS */
+document.getElementById("tgBtn").addEventListener("click", function(){
+  fbq('track','JoinTelegram');   // ✅ custom
+  fbq('track','Subscribe');      // ✅ subscribe
+  fbq('track','Lead');           // ✅ lead
+});
 </script>
 
 </body>
